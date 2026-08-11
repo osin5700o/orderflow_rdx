@@ -19,7 +19,6 @@ Order Flow
 - - Liquidity -
 - - Market Structure -
 - - Price Formation -
-- - Supply & Demand Mechanics -
 
 
 ```text
@@ -33,20 +32,10 @@ Order Flow
 - - Limit Orders -
 - - Stop Orders -
 - - Stop-Limit Orders -
-- - Buy Stops -
-- - Sell Stops -
-- - IOC Orders -
-- - FOK Orders -
-- - GTC Orders -
-- - Day Orders -
-- - Pegged  -
 - - Iceberg Orders -
 - - Hidden Orders -
-- - Reserve Orders
 - - Passive Orders -
 - - Aggressive Orders -
-- - Marketable Limit Orders -
-- - Smart Order Routing -
 
 
 ```text
@@ -76,11 +65,6 @@ Order Flow
 - - Hidden Liquidity -
 - - Liquidity Pools -
 - - Liquidity Voids -
-- - Liquidity Provision -
-- - Liquidity Consumption -
-- - Liquidity Taking -
-- - Liquidity Regimes -
-
 
 ```text
 [+] MODULE LOADED
@@ -126,6 +110,8 @@ Order Flow
 - - Heatmap Liquidity -
 - - Order Flow Visualization -
 - - Bookmap Concepts -
+- - Stacking -
+- - Pulling -
 
 
 ```text
@@ -152,13 +138,9 @@ Order Flow
 
 - - Iceberg Orders -
 - - Hidden Orders -
-- - Reserve Orders -
-- - Replenishment -
 - - Hidden Liquidity -
 - - Iceberg Detection -
 - - Institutional Execution -
-- - Stealth Accumulation -
-- - Stealth Distribution -
 
 
 ```text
@@ -174,8 +156,6 @@ Order Flow
 - - Liquidity Grabs -
 - - Buy-Side Liquidity -
 - - Sell-Side Liquidity -
-- - Stop Clusters -
-- - Forced Liquidations -
 
 
 ```text
@@ -204,7 +184,6 @@ Order Flow
 - - Auction Imbalances -
 - - Auction Matching -
 - - Price Discovery Auctions -
-- - Indicative Price -
 - - Auction Liquidity -
 - - Auction Dynamics -
 
@@ -223,24 +202,6 @@ Order Flow
 - - Tick Aggregation -
 - - Book Reconstruction -
 - - Event Processing -
-
-
-```text
-[+] MODULE LOADED
-```
-
-## STEP 14 — AUCTION THEORY & ADVERSE SELECTION
-
-
-- - Kyle Model -
-- - Glosten-Milgrom Model -
-- - Easley-O'Hara Model -
-- - Adverse Selection -
-- - Information Asymmetry -
-- - Informed Traders -
-- - Noise Traders -
-- - Price Impact Theory -
-- - Auction Theory -
 
 
 ```text
@@ -277,8 +238,6 @@ Order Flow
 - **Stop-Limit Order** — A stop that becomes a limit order at the trigger.
 - **Iceberg Order** — A large order split into visible and hidden portions to hide full size.
 - **Hidden Order** — Order quantity not shown in the public order book.
-- **Fill** — Execution of (all or part of) an order.
-- **Partial Fill** — Only part of the order is executed.
 - **Aggressive Order** — An order that takes liquidity (trades against resting orders).
 - **Passive Order** — An order that supplies liquidity (rests in the book).
 - **Maker** — A trader/order that adds liquidity (resting limit order).
@@ -292,11 +251,7 @@ Order Flow
 - **Volume Imbalance** — Difference in volume between bid-side and ask-side trades.
 - **Bid/Ask Delta** — Difference between buy-side and sell-side executed volume.
 - **Cumulative Delta** — Running total of signed volume (buy minus sell) over time.
-- **Footprint Chart** — Chart showing executed volume split by bid/ask at each price.
-- **Footprint (Bid/Ask prints)** — Individual cells showing buy vs sell volume at price/time.
-- **Trade Prints** — Individual trade records (size, price, time, aggressor side).
 - **Execution** — Process of matching and filling an order.
-- **Fill Rate** — Percent or speed at which orders are filled.
 - **Matching Engine** — Exchange component that matches incoming orders with resting orders.
 - **Market Depth** — Aggregate visible size at each price level.
 - **Book Pressure** — Net resting size pressure on one side of the book (buy/sell).
@@ -310,18 +265,13 @@ Order Flow
 - **Order Size** — Quantity of contracts/shares in an order.
 - **Block Trade** — Very large, often negotiated trade executed off-exchange or with special reporting.
 - **Order Slicing** — Breaking a large order into smaller pieces to reduce impact.
-- **Algorithmic Execution** — Use of algorithms to execute orders (e.g., VWAP algos).
-- **Execution Algorithm** — Specific algorithm (TWAP, VWAP, POV, iceberg algorithm).
 - **POV (Percent of Volume)** — Execution algorithm that targets a set percentage of market volume.
 - **Rebate / Maker-Taker Fee** — Fee/rebate structure rewarding makers or charging takers.
 - **Price Discovery** — Process by which markets arrive at fair price through trades/quotes.
 - **Opening Auction** — Matching mechanism at market open to determine starting price.
 - **Closing Auction** — Auction at session close for final price discovery.
 - **Continuous Auction** — Normal continuous trading outside auction periods.
-- **Pre-market / After-hours** — Trading sessions before official open or after official close.
-- **Cross Trade** — Trade where both sides are matched internally or off-exchange at a set price.
 - **Matched Trade** — Trade executed by a matching engine between two orders.
-- **Clearing** — Process ensuring settlement and guaranteeing trade obligations.
 - **Settlement** — Transfer of security ownership and payment after a trade.
 - **NOII (Net Order Imbalance Indicator)** — Indicator of buy/sell imbalance before auction.
 - **Market Data Feed** — Stream of quotes and trades from an exchange or aggregator.
@@ -337,14 +287,11 @@ Order Flow
 - **Price Level** — Specific price row in the order book.
 - **Best Bid / Best Ask** — Highest bid and lowest ask at top of book.
 - **Stacking** — Adding multiple orders at the same price level to create depth.
-- **Spoof Size** — Cancelled quoted size intended to mislead (part of spoofing).
-- **Crossing Network** — Platform matching buy and sell orders at midpoint or specified price.
+- **pulling** - Reducing multiple orders at the same price level to create light.
 - **Dark Pool** — Private trading venue where order details are not displayed publicly.
 - **On-Exchange vs Off-Exchange** — Whether trade occurs on the public exchange or elsewhere.
-- **Trade-Through** — Executing at a price worse than a protected/top-of-book price (regulated).
 - **Aggressive Volume** — Volume that resulted from taker/aggressive orders.
 - **Passive Volume** — Volume resulting from makers/resting orders being taken.
-- **Signed Volume** — Volume labeled positive/negative based on aggressor side.
 
 
 ---
@@ -352,8 +299,8 @@ Order Flow
 # [CORE TARGETS] MAIN CONCEPT
 
 
-- *Liqudity Absorption Ditection*
-- *Liqudity Hunt by heatmap*
+- *Liqudity area Ditection*
+- *Liqudity Grab & sweep by heatmap*
 
 
 ---
@@ -362,4 +309,4 @@ Order Flow
 
 - *Bookmap*
 - *Deepcharts*
-- *DeepDom*
+- *ATAS or Motivewave*
