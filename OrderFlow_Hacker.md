@@ -13,8 +13,6 @@ Order Flow
 - - Auction Market Theory (AMT) -
 - - Fair Value -
 - - Exchanges -
-- - Trading Venue -
-- - ECNs -
 - - Dark Pools -
 - - Liquidity -
 - - Market Structure -
