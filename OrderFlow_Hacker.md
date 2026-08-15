@@ -157,23 +157,6 @@ Order Flow
 ```text
 [+] MODULE LOADED
 ```
-
-## STEP 11 — TICK DATA & BOOK RECONSTRUCTION
-
-
-- - Tick Data -
-- - Quote Data -
-- - Trade Data -
-- - Tick Replay -
-- - Tick Aggregation -
-- - Book Reconstruction -
-- - Event Processing -
-
-
-```text
-[+] MODULE LOADED
-```
-
 # [DATABASE] TERMS OF ORDERFLOW
 
 
