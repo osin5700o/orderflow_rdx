@@ -12,9 +12,8 @@ Order Flow
 
 - - Auction Market Theory (AMT) -
 - - Exchanges -
-- - Dark Pools -
 - - Liquidity -
-- - Price Formation -
+- - Dark Pools -
 
 
 ```text
@@ -89,7 +88,6 @@ Order Flow
 - - Value Area Low (VAL) -
 - - High Volume Nodes (HVN) -
 - - Low Volume Nodes (LVN) -
-- - Session Profile -
 - - Acceptance -
 - - Rejection -
 
@@ -136,7 +134,6 @@ Order Flow
 - - Hidden Orders -
 - - Hidden Liquidity -
 - - Iceberg Detection -
-- - Institutional Execution -
 
 
 ```text
@@ -150,6 +147,9 @@ Order Flow
 - - Stop Runs -
 - - Liquidity Sweeps -
 - - Liquidity Grabs -
+- - LIQUIDITY POOLS -
+- - Liquidity voids -
+- - Garbage Liquidity -
 - - Buy-Side Liquidity -
 - - Sell-Side Liquidity -
 
@@ -158,37 +158,7 @@ Order Flow
 [+] MODULE LOADED
 ```
 
-## STEP 11 — LIQUIDITY PROVIDERS & MARKET MAKERS
-
-
-- - Market Makers -
-- - Liquidity Providers -
-- - Two-Sided Quoting -
-- - Market Making Models -
-- - Maker-Taker Fees -
-
-
-```text
-[+] MODULE LOADED
-```
-
-## STEP 12 — EXCHANGE AUCTIONS
-
-
-- - Opening Auction -
-- - Closing Auction -
-- - Auction Imbalances -
-- - Auction Matching -
-- - Price Discovery Auctions -
-- - Auction Liquidity -
-- - Auction Dynamics -
-
-
-```text
-[+] MODULE LOADED
-```
-
-## STEP 13 — TICK DATA & BOOK RECONSTRUCTION
+## STEP 11 — TICK DATA & BOOK RECONSTRUCTION
 
 
 - - Tick Data -
