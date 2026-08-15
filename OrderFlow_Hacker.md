@@ -262,11 +262,12 @@ Order Flow
 
 ---
 
-# [CORE TARGETS] MAIN CONCEPT
+# MAIN CONCEPT
 
 
 - *Liqudity area Ditection*
 - *Liqudity Grab & sweep by heatmap*
+- *LVN , VWAP , VP , Bigtrades , Heatmap - concept -> osin*
 
 
 ---
@@ -275,4 +276,4 @@ Order Flow
 
 - *Bookmap*
 - *Deepcharts*
-- *ATAS or Motivewave*
+- *ATAS and Motivewave*
