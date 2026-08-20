@@ -1,24 +1,13 @@
-# Order Flow
-
-Order Flow
-
-
-```text
-[+] MODULE LOADED
-```
+*Order Flow*
 
 ## STEP 1 — MARKET MICROSTRUCTURE
 
 
 - - Auction Market Theory (AMT) -
 - - Exchanges -
+- - Contract - 
+- - Types of Markets -
 - - Liquidity -
-- - Dark Pools -
-
-
-```text
-[+] MODULE LOADED
-```
 
 ## STEP 2 — ORDER TYPES
 
@@ -32,11 +21,6 @@ Order Flow
 - - Passive Orders -
 - - Aggressive Orders -
 
-
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 3 — LIMIT ORDER BOOK (LOB)
 
 
@@ -49,10 +33,6 @@ Order Flow
 - - Resting Orders -
 - - Executed Orders -
 
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 4 — BID-ASK SPREAD & LIQUIDITY
 
 
@@ -61,10 +41,6 @@ Order Flow
 - - Liquidity Pools -
 - - Liquidity Voids -
 
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 5 — MARKET DEPTH & IMBALANCE
 
 
@@ -72,11 +48,6 @@ Order Flow
 - - Order Book Imbalance -
 - - Liquidity Stacking -
 - - Liquidity Pulling -
-
-
-```text
-[+] MODULE LOADED
-```
 
 ## STEP 6 — VOLUME PROFILE & MARKET PROFILE
 
@@ -91,11 +62,6 @@ Order Flow
 - - Acceptance -
 - - Rejection -
 
-
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 7 — HEATMAP
 
 
@@ -107,25 +73,12 @@ Order Flow
 - - Stacking -
 - - Pulling -
 
-
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 8 — ABSORPTION VS AGGRESSION
 
 
 - - Absorption -
 - - Aggression -
 - - Absorption Zones -
-- - Exhaustion -
-- - Trapped Traders -
-- - Failed Breakouts -
-
-
-```text
-[+] MODULE LOADED
-```
 
 ## STEP 9 — ICEBERG & HIDDEN LIQUIDITY
 
@@ -135,11 +88,6 @@ Order Flow
 - - Hidden Liquidity -
 - - Iceberg Detection -
 
-
-```text
-[+] MODULE LOADED
-```
-
 ## STEP 10 — STOP HUNTS & LIQUIDITY POOLS
 
 
@@ -148,16 +96,13 @@ Order Flow
 - - Liquidity Sweeps -
 - - Liquidity Grabs -
 - - LIQUIDITY POOLS -
+- - Dark pools -
 - - Liquidity voids -
 - - Garbage Liquidity -
 - - Buy-Side Liquidity -
 - - Sell-Side Liquidity -
 
-
-```text
-[+] MODULE LOADED
-```
-# [DATABASE] TERMS OF ORDERFLOW
+# TERMS OF ORDERFLOW
 
 
 - **Tick** — The minimum price movement of a trading instrument.
@@ -168,8 +113,6 @@ Order Flow
 - **Bid** — The highest price a buyer is willing to pay.
 - **Ask (Offer)** — The lowest price a seller is willing to accept.
 - **Bid-Ask Spread** — The difference between the best ask and best bid.
-- **Mid Price** — The midpoint of the best bid and best ask.
-- **Last Price** — The price of the most recent trade.
 - **Trade** — An executed transaction between buyer and seller.
 - **Fair Value** — Where buyers and sellers are agree.
 - **Volume** — The quantity of contracts/shares traded over a period.
@@ -203,9 +146,6 @@ Order Flow
 - **Execution** — Process of matching and filling an order.
 - **Matching Engine** — Exchange component that matches incoming orders with resting orders.
 - **Market Depth** — Aggregate visible size at each price level.
-- **Book Pressure** — Net resting size pressure on one side of the book (buy/sell).
-- **Spoofing** — Illegal practice of placing orders to mislead then cancelling them.
-- **Layering** — Placing multiple deceptive orders at different prices (illegal practice).
 - **Price Ladder** — Vertical display of price levels with size (used in DOM).
 - **Heatmap** — Visual display of liquidity accumulation or trade intensity over price/time.
 - **Volume Profile** — Histogram of volume traded at each price over a time range.
@@ -213,21 +153,9 @@ Order Flow
 - **TWAP (Time Weighted Average Price)** — Average price evenly weighted over time.
 - **Order Size** — Quantity of contracts/shares in an order.
 - **Block Trade** — Very large, often negotiated trade executed off-exchange or with special reporting.
-- **Order Slicing** — Breaking a large order into smaller pieces to reduce impact.
-- **POV (Percent of Volume)** — Execution algorithm that targets a set percentage of market volume.
-- **Rebate / Maker-Taker Fee** — Fee/rebate structure rewarding makers or charging takers.
 - **Price Discovery** — Process by which markets arrive at fair price through trades/quotes.
-- **Opening Auction** — Matching mechanism at market open to determine starting price.
-- **Closing Auction** — Auction at session close for final price discovery.
-- **Continuous Auction** — Normal continuous trading outside auction periods.
 - **Matched Trade** — Trade executed by a matching engine between two orders.
-- **Settlement** — Transfer of security ownership and payment after a trade.
-- **NOII (Net Order Imbalance Indicator)** — Indicator of buy/sell imbalance before auction.
 - **Market Data Feed** — Stream of quotes and trades from an exchange or aggregator.
-- **Feed Handler** — Software component parsing exchange market data.
-- **Latency** — Delay between an event and its visibility to participants.
-- **Exchange Latency** — Time delay inside an exchange or across networks.
-- **Latency Arbitrage** — Exploiting speed differences to profit from stale quotes.
 - **Timestamp** — Time recorded for quotes/trades (important for sequencing).
 - **Trade Size** — Size of an executed trade.
 - **Resting Order** — Order present in the book waiting to be matched.
@@ -238,7 +166,6 @@ Order Flow
 - **Stacking** — Adding multiple orders at the same price level to create depth.
 - **pulling** - Reducing multiple orders at the same price level to create light.
 - **Dark Pool** — Private trading venue where order details are not displayed publicly.
-- **On-Exchange vs Off-Exchange** — Whether trade occurs on the public exchange or elsewhere.
 - **Aggressive Volume** — Volume that resulted from taker/aggressive orders.
 - **Passive Volume** — Volume resulting from makers/resting orders being taken.
 
@@ -248,14 +175,13 @@ Order Flow
 # MAIN CONCEPT
 
 
-- *Liqudity area Ditection*
-- *Liqudity Grab & sweep by heatmap*
-- *LVN , VWAP , VP , Bigtrades , Heatmap - concept -> osin*
+- *Liqudity*
+- *concept -> osin*
 
 
 ---
 
-# [TOOLS] BEST SOFTWARE
+# BEST SOFTWARE
 
 - *Bookmap*
 - *Deepcharts*
