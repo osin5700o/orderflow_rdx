@@ -163,6 +163,14 @@
 
 ---
 
+# Videos
+
+*https://www.youtube.com/watch?v=wI9b968AvW8*
+*https://www.youtube.com/watch?v=w6rWWt9FjDU*
+*https://www.youtube.com/watch?v=22FbpFKG-ts*
+
+---
+
 # MAIN CONCEPT
 
 
