@@ -96,11 +96,8 @@
 - - Liquidity Sweeps -
 - - Liquidity Grabs -
 - - LIQUIDITY POOLS -
-- - Dark pools -
 - - Liquidity voids -
 - - Garbage Liquidity -
-- - Buy-Side Liquidity -
-- - Sell-Side Liquidity -
 
 # TERMS OF ORDERFLOW
 
@@ -119,8 +116,6 @@
 - **Traded Volume** — Actual traded quantity at a given time or price.
 - **Volume at Price (VAP)** — Total volume executed at a specific price level.
 - **Time & Sales (Tape)** — Stream/list of executed trades with time, size, and price.
-- **Order Flow** — The stream of incoming orders and executed trades over time.
-- **Order Book** — The list of current bids and asks (resting orders) by price/size.
 - **Level 1** — Best bid/ask and last trade (top-of-book data).
 - **Level 2** — Market depth showing multiple price levels and sizes.
 - **Depth of Market (DOM)** — Display of available quantity at multiple price levels.
@@ -149,10 +144,6 @@
 - **Price Ladder** — Vertical display of price levels with size (used in DOM).
 - **Heatmap** — Visual display of liquidity accumulation or trade intensity over price/time.
 - **Volume Profile** — Histogram of volume traded at each price over a time range.
-- **VWAP (Volume Weighted Average Price)** — Average price weighted by volume over a period.
-- **TWAP (Time Weighted Average Price)** — Average price evenly weighted over time.
-- **Order Size** — Quantity of contracts/shares in an order.
-- **Block Trade** — Very large, often negotiated trade executed off-exchange or with special reporting.
 - **Price Discovery** — Process by which markets arrive at fair price through trades/quotes.
 - **Matched Trade** — Trade executed by a matching engine between two orders.
 - **Market Data Feed** — Stream of quotes and trades from an exchange or aggregator.
@@ -185,6 +176,5 @@
 # BEST SOFTWARE
 
 - *Bookmap*
-- *Deepcharts*
-- *ATAS and Motivewave*
+- *ATAS or Motivewave*
 - *openmarket.xyz*
