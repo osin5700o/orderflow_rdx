@@ -175,8 +175,9 @@
 # MAIN CONCEPT
 
 
-- *Liqudity*
-- *concept -> osin*
+- *OHLC*
+- *1D Liquidity Reversal*
+- *Footprint*
 
 
 ---
